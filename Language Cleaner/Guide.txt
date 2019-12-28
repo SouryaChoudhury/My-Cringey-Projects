@@ -1,0 +1,3 @@
+This program reads a text file containing abusive and controversial terms, and generates a new file where
+the words have been edited in a manner which makes them less conspicuous, but allows them to be suggestive 
+of their meaning.
