@@ -17,7 +17,7 @@ print("Enter the name of the new file you want to create.")
 new_fname = input()
 new_file = open(new_fname,"a+")
 
-#Generating a clean file
+# Generating a clean file
 for line in text:
     string = ""
     words = line.split()
