@@ -1,3 +1,3 @@
-Shit!
-Damn it!
-Crap!
+This damn file contains a shitty bit of bad language.
+This crap will be edited out in the new file.
+Check it out!
