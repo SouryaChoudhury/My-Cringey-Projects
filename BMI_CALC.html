@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>BMI_Calculator</title>
+
+<style>
+
+#page
+{
+    background-color: aliceblue;
+    text-align: center;
+}
+#heading
+{
+    color: darkblue;
+}
+.line
+{
+    color: brown;
+}
+#input
+{
+    color: darkgoldenrod;
+    border-color: chocolate;
+    font-size: large;
+}
+#bmi
+{
+    color: darkred;
+    font-size: x-large;
+}
+#info
+{
+    color: darkslategray;
+    font-size: larger;
+}
+
+</style>
+
+<script>
+
+function calculate()
+{
+    var height = prompt("Enter your height (in cm).");
+    var weight = prompt("Enter your weight in kg.");
+    var bmi = weight/((height/100)**2);
+    bmi = bmi.toFixed(2);
+    display(bmi);
+}
+
+function display(value)
+{
+    var message;
+    if(value <18)
+    {
+        message = "You are underweight.";
+    }
+    else if(value < 25)
+    {
+        message = "You have a healthy figure.";
+    }
+    else if(value < 30)
+    {
+        message = "You are overweight";
+    }
+    else
+    {
+        message = "You are obese."
+    }
+    document.getElementById("info").innerHTML = message;
+    
+}
+
+</script>
+
+</head>
+
+<body id = "page">
+
+<h1 id = "heading">BMI CALCULATOR</h1>
+<hr class = "line">
+<button id = "input" onclick = "calculate()">Enter your details here!</button>
+<h1></h1>
+<div id = "bmi"></div>
+<h1></h1>
+<div id = "info"></div>
+<h1></h1>
+<hr class = "line">
+
+</body>
+
+</html>
