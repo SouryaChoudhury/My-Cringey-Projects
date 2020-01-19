@@ -1,0 +1,3 @@
+This is a webpage written in HTML, CSS and JAVASCRIPT, which calculates your body mass index (BMI) based on your 
+height and weight and gives you feedback based on it.
+Enjoy being told how imperfect your body is!
